@@ -130,7 +130,8 @@ button {
 /* How it Works Section */
 
 .main-container {
-  padding-top: 2em;
+    padding-top: 2em;
+    margin: 0 2em;
 }
 
 .section-2-title {
@@ -141,7 +142,6 @@ button {
 .value-prop-section {
   padding: 3em;
   border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .value-prop-content {
