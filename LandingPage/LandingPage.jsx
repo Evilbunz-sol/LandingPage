@@ -3,6 +3,9 @@ import { useNavigate } from "react-router-dom";
 import "./LandingPage.css";
 import CardComponent from '../Components/CardComponent';
 import carIcon from '../assets/car.svg';  
+import marketPriceIcon from '../assets/marketPrice.svg';  
+import getPriceIcon from '../assets/getPrice.svg';  
+import getCarIcon from '../assets/getCar.svg';  
 import carBuy from '../assets/carbuyer.jpeg';  
 import carLogo from '../assets/carlogo.png';  
 
@@ -38,17 +41,17 @@ export default function LandingPage() {
                     description="Share a few quick details about the car you are looking for."
                 />
                 <CardComponent
-                    icon={carIcon}
+                    icon={marketPriceIcon}
                     title="View the market price"
                     description="Get the market price for your car, with insights."
                 />
                 <CardComponent
-                    icon={carIcon}
+                    icon={getPriceIcon}
                     title="Get a discount price"
                     description="Our experts get you the deal lower than market price!"
                 />
                 <CardComponent
-                    icon={carIcon}
+                    icon={getCarIcon}
                     title="Get your car!"
                     description="Save time and money. We do the work to find your car."
                 />
