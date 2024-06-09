@@ -1,18 +1,32 @@
 body {
     font-family: Arial, Helvetica, sans-serif;
-    background: #fafafa;
-    color: #272727;
+    background-image: linear-gradient(to top, #e6e9f0 0%, #eef1f5 100%);    color: #272727;
     margin: 0;
 }
 
 
 /* Typography */
 
+@font-face {
+  font-family: 'toxigenesis';
+  src: url('../assets/toxigenesis.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.Logo-title {
+    font-family: toxigenesis;
+    font-size: 4rem;
+    color: #00594f;
+    margin: 0 0 0.5em 0;
+}
+
+
 h1 {
     font-size: 3.5rem;
     font-weight: 700;
     text-align: left;
-    margin-bottom: 0
+    margin-bottom: 0;
 }
 
 h2 {
@@ -32,6 +46,19 @@ p {
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap; /* Allow items to wrap to the next line */
+}
+
+.flex-direction {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Logo */
+
+.car-logo {
+    margin-top: 2em;
+    width: 300px;
 }
 
 
@@ -84,11 +111,9 @@ button {
 /* Banner Pane */
 .banner-section {
   padding: 3em;
-  background: #ffffff;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background-color: #f5fffa;
-
+  background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
 }
 
 .heaading-color{
@@ -115,7 +140,6 @@ button {
 /* Value Prop Section */
 .value-prop-section {
   padding: 3em;
-  background: #f9f9f9;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
@@ -124,6 +148,7 @@ button {
   flex: 1;
   padding-right: 2em;
   margin-right: 2em;
+  margin-bottom: 2em
 }
 
 .value-prop-content h2 {
@@ -147,4 +172,29 @@ button {
 .buying-a-car-img img {
   max-width: 100%;
   border-radius: 10px;
+}
+
+/* Footer */
+.footer-section {
+    background-image: linear-gradient(120deg, #fdfbfb 0%, #ebedee 100%);
+    box-shadow: -1px -5px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px 10px 0 0;
+}
+
+.flex-footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.Logo-title-small {
+    font-family: toxigenesis;
+    font-size: 1.5rem;
+    color: #00594f;
+    margin-top: 0;
+}
+
+.car-logo-small {
+    margin-bottom: 0.5em;
+    width: 200px;
 }

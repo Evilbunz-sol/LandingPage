@@ -4,9 +4,15 @@ import "./LandingPage.css";
 import CardComponent from '../Components/CardComponent';
 import carIcon from '../assets/car.svg';  
 import carBuy from '../assets/carbuyer.jpeg';  
+import carLogo from '../assets/carlogo.png';  
 
 export default function LandingPage() {
     const navigate = useNavigate()
+    
+    const handleClick = () => {
+        window.location.href = 'https://fairbot.ai/'
+    }
+
     
     // State 
     return (
@@ -16,8 +22,10 @@ export default function LandingPage() {
                 <h1>The <span className="heaading-color"> best </ span> <br/> way to buy your <br/> car</h1>
                 <p className="heading-subtitle">Tell us the car you want and get a get cheapest price.</p>
             </div>
-            <div>
-                <button className="get-started-button"> Get Started </button>
+            <div className="flex-direction">
+                <img className="car-logo" src={carLogo} />
+                <span className="Logo-title"> Fairbot </span>
+                <button className="get-started-button" onClick={handleClick}> Get Started </button>
             </div>
         </div>
         
@@ -52,11 +60,18 @@ export default function LandingPage() {
                 <div className="value-prop-content">
                     <h2>Save Time & Money</h2>
                     <p>Looking to buy a car? Save up to %10 or more for your car by working with our team of experts. </p>
-                    <button>Get an offer</button>
+                    <button onClick={handleClick}> Get your price </button>
                 </div>
                 <div className="buying-a-car-img">
                     <img src={carBuy} alt="A person buying a car" />
                 </div>
+            </div>  
+        </div>
+        
+        <div className="footer-section">
+            <div className="flex-footer">
+                <img className="car-logo-small" src={carLogo} />
+                <p className="Logo-title-small"> Fairbot </p>
             </div>
         </div>
         </>
