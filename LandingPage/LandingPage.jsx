@@ -13,7 +13,7 @@ export default function LandingPage() {
     const navigate = useNavigate()
     
     const handleClick = () => {
-        window.location.href = 'https://fairbot.ai/signup'
+        window.location.href = 'https://forms.gle/zjYKPD9eNJDmZBjy5'
     }
 
     
